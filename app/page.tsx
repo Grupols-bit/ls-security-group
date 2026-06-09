@@ -40,16 +40,35 @@ export default function LSSecurityGroupHomePage() {
     "Enfoque práctico y profesional",
   ];
 
+  const valueCards = [
+    {
+      title: "Mayor visibilidad",
+      text: "Obtén claridad sobre riesgos, exposición digital y eventos relevantes que pueden afectar tu empresa.",
+    },
+    {
+      title: "Respuesta más rápida",
+      text: "Identificamos señales de riesgo y te guiamos con acciones concretas antes de que el impacto sea mayor.",
+    },
+    {
+      title: "Decisiones más claras",
+      text: "Traducimos hallazgos técnicos en recomendaciones entendibles para propietarios, gerencia y equipos internos.",
+    },
+    {
+      title: "Protección escalable",
+      text: "Accede a un enfoque profesional de ciberseguridad sin cargar con el costo de un equipo interno completo.",
+    },
+  ];
+
   const processSteps = [
     {
       number: "01",
       title: "Evaluamos tu seguridad actual",
-      text: "Analizamos la exposición digital de tu empresa, identificamos riesgos visibles y entendemos los puntos que requieren mayor protección.",
+      text: "Analizamos la exposición digital de tu empresa, detectamos riesgos visibles y entendemos los puntos que requieren mayor protección.",
     },
     {
       number: "02",
       title: "Implementamos monitoreo",
-      text: "Definimos una estrategia de monitoreo y revisión para mejorar la visibilidad de eventos, accesos y actividad sospechosa.",
+      text: "Definimos un esquema práctico de monitoreo y revisión para mejorar la visibilidad de eventos, accesos y actividad sospechosa.",
     },
     {
       number: "03",
@@ -65,7 +84,7 @@ export default function LSSecurityGroupHomePage() {
 
   return (
     <main className="min-h-screen bg-slate-950 text-white">
-      <header className="sticky top-0 z-50 border-b border-cyan-400/20 bg-slate-950/90 backdrop-blur-xl">
+      <header className="sticky top-0 z-50 border-b border-cyan-400/20 bg-slate-950/85 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-3">
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-cyan-300/40 bg-gradient-to-br from-cyan-400 to-blue-600 font-black text-white shadow-lg shadow-cyan-500/20">
@@ -104,17 +123,29 @@ export default function LSSecurityGroupHomePage() {
       </header>
 
       <section className="relative overflow-hidden border-b border-white/10 bg-slate-950">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(34,211,238,0.25),transparent_35%),linear-gradient(120deg,rgba(15,23,42,0.95),rgba(2,6,23,0.85))]" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[size:48px_48px] opacity-20" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(34,211,238,0.22),transparent_35%),radial-gradient(circle_at_20%_20%,rgba(59,130,246,0.12),transparent_30%),linear-gradient(120deg,rgba(15,23,42,0.96),rgba(2,6,23,0.88))]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.06)_1px,transparent_1px)] bg-[size:48px_48px] opacity-20" />
 
-        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-24 md:grid-cols-2 md:py-32">
+        <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-6 py-24 md:grid-cols-2 md:py-32">
           <div>
+            <div className="mb-6 flex flex-wrap gap-3">
+              <span className="inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-300">
+                SOC 24/7
+              </span>
+              <span className="inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-slate-200">
+                Protección de Correo
+              </span>
+              <span className="inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-slate-200">
+                Evaluación Web
+              </span>
+            </div>
+
             <p className="mb-5 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-300">
               Ciberseguridad avanzada para empresas en crecimiento
             </p>
 
             <h1 className="text-4xl font-black uppercase tracking-tight text-white md:text-6xl">
-              Ciberseguridad avanzada y monitoreo SOC para empresas en crecimiento.
+              Ciberseguridad avanzada y monitoreo SOC para empresas que no pueden detener su operación.
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
@@ -136,6 +167,27 @@ export default function LSSecurityGroupHomePage() {
               >
                 Ver Servicios
               </a>
+            </div>
+
+            <div className="mt-10 grid gap-4 sm:grid-cols-3">
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <p className="text-2xl font-black text-white">24/7</p>
+                <p className="mt-1 text-sm text-slate-300">
+                  Visibilidad y monitoreo continuo
+                </p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <p className="text-2xl font-black text-white">SOC</p>
+                <p className="mt-1 text-sm text-slate-300">
+                  Enfoque profesional y escalable
+                </p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <p className="text-2xl font-black text-white">PDF</p>
+                <p className="mt-1 text-sm text-slate-300">
+                  Reportes claros y accionables
+                </p>
+              </div>
             </div>
           </div>
 
@@ -177,6 +229,30 @@ export default function LSSecurityGroupHomePage() {
                   <div className="mt-4 h-2 rounded-full bg-slate-800">
                     <div className="h-2 w-2/3 rounded-full bg-red-500" />
                   </div>
+                </div>
+              </div>
+
+              <div className="mt-4 grid gap-4 sm:grid-cols-3">
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  <p className="text-xs uppercase tracking-widest text-slate-400">
+                    Alertas
+                  </p>
+                  <p className="mt-2 text-2xl font-black text-white">12</p>
+                  <p className="mt-1 text-xs text-cyan-300">Últimas 24 horas</p>
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  <p className="text-xs uppercase tracking-widest text-slate-400">
+                    Estado
+                  </p>
+                  <p className="mt-2 text-2xl font-black text-white">Activo</p>
+                  <p className="mt-1 text-xs text-cyan-300">Monitoreo continuo</p>
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  <p className="text-xs uppercase tracking-widest text-slate-400">
+                    Prioridad
+                  </p>
+                  <p className="mt-2 text-2xl font-black text-white">Alta</p>
+                  <p className="mt-1 text-xs text-cyan-300">Riesgos visibles</p>
                 </div>
               </div>
 
@@ -260,27 +336,33 @@ export default function LSSecurityGroupHomePage() {
               protección ahora.
             </h2>
             <div className="mx-auto mt-5 h-1 w-24 rounded-full bg-red-600" />
+            <p className="mt-6 text-lg leading-8 text-slate-700">
+              Diseñados para empresas que buscan claridad, acción y protección real.
+            </p>
           </div>
 
           <div className="mt-12 grid gap-7 md:grid-cols-2 lg:grid-cols-4">
-            {services.map((service) => (
+            {services.map((service, index) => (
               <div
                 key={service.title}
                 className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl shadow-slate-300/40 transition hover:-translate-y-2 hover:shadow-2xl"
               >
-                <div className="h-40 overflow-hidden bg-slate-900">
+                <div className="relative h-40 overflow-hidden bg-slate-900">
                   <img
                     src={service.image}
                     alt={service.title}
                     className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                   />
+                  <div className="absolute left-4 top-4 rounded-full bg-slate-950/80 px-3 py-1 text-xs font-black text-cyan-300">
+                    0{index + 1}
+                  </div>
                 </div>
 
                 <div className="flex flex-1 flex-col p-6">
                   <h3 className="text-lg font-black text-slate-950">
                     {service.title}
                   </h3>
-                  <p className="mt-4 min-h-28 text-sm leading-6 text-slate-600">
+                  <p className="mt-4 min-h-32 text-sm leading-6 text-slate-600">
                     {service.text}
                   </p>
 
@@ -291,6 +373,32 @@ export default function LSSecurityGroupHomePage() {
                     Solicitar información
                   </a>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white px-6 py-20 text-slate-950">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-black uppercase tracking-widest text-blue-700">
+              Valor
+            </p>
+            <h2 className="mt-3 text-3xl font-black uppercase tracking-tight md:text-4xl">
+              Lo que gana tu empresa con un enfoque profesional de ciberseguridad
+            </h2>
+            <div className="mx-auto mt-5 h-1 w-24 rounded-full bg-red-600" />
+          </div>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {valueCards.map((card) => (
+              <div
+                key={card.title}
+                className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-lg shadow-slate-200/60"
+              >
+                <h3 className="text-xl font-black text-slate-950">{card.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-slate-600">{card.text}</p>
               </div>
             ))}
           </div>
@@ -489,6 +597,13 @@ export default function LSSecurityGroupHomePage() {
             </p>
 
             <div className="mt-8 rounded-2xl border border-cyan-300/20 bg-white/5 p-6">
+              <p className="text-lg font-bold text-white">Correo de contacto</p>
+              <p className="mt-2 break-all text-cyan-300">
+                contactolssecuritygroup@gmail.com
+              </p>
+            </div>
+
+            <div className="mt-4 rounded-2xl border border-cyan-300/20 bg-white/5 p-6">
               <p className="text-lg font-bold text-white">Dominio oficial</p>
               <p className="mt-2 text-cyan-300">lssecuritygroup.com</p>
             </div>
@@ -513,13 +628,17 @@ export default function LSSecurityGroupHomePage() {
                 Solicitar Evaluación de Seguridad
               </a>
             </div>
+
+            <p className="mt-4 text-center text-xs text-slate-400">
+              Respuesta profesional y seguimiento claro para tu empresa.
+            </p>
           </div>
         </div>
       </section>
 
       <footer className="border-t border-white/10 bg-slate-950 px-6 py-10 text-white">
-        <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-3">
-          <div>
+        <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-4">
+          <div className="md:col-span-2">
             <div className="flex items-center gap-3">
               <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-cyan-300/40 bg-gradient-to-br from-cyan-400 to-blue-600 font-black text-white">
                 LS
@@ -531,7 +650,8 @@ export default function LSSecurityGroupHomePage() {
             </div>
 
             <p className="mt-5 max-w-sm text-sm leading-6 text-slate-400">
-              Ciberseguridad avanzada para empresas en crecimiento.
+              Ciberseguridad avanzada para empresas en crecimiento que necesitan
+              proteger su operación, reputación y confianza digital.
             </p>
           </div>
 
@@ -541,19 +661,19 @@ export default function LSSecurityGroupHomePage() {
             </p>
             <div className="mt-4 space-y-2 text-sm text-slate-400">
               <p>Evaluación de Vulnerabilidades Web</p>
-              <p>Seguridad en la Nube y Correo Empresarial</p>
-              <p>SOC 24/7 (Centro de Operaciones de Seguridad)</p>
+              <p>Seguridad en la Nube y Correo</p>
+              <p>SOC 24/7</p>
               <p>Respuesta ante Incidentes</p>
             </div>
           </div>
 
           <div>
             <p className="font-black uppercase tracking-widest text-cyan-300">
-              Dominio
+              Contacto
             </p>
             <div className="mt-4 space-y-2 text-sm text-slate-400">
               <p>lssecuritygroup.com</p>
-              <p>contactolssecuritygroup@gmail.com</p>
+              <p className="break-all">contactolssecuritygroup@gmail.com</p>
             </div>
           </div>
         </div>
@@ -565,4 +685,3 @@ export default function LSSecurityGroupHomePage() {
     </main>
   );
 }
-
